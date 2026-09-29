@@ -6,26 +6,31 @@
   <title>Jose Vincent Bibay | Odoo Developer</title>
   <meta name="description" content="Jose Vincent Bibay is an Odoo developer with 2+ years of experience building HR, payroll and attendance software in the Philippines.">
   <meta property="og:title" content="Jose Vincent Bibay | Odoo Developer">
-  <meta property="og:description" content="Odoo developer building HR, payroll and attendance software. Experience, skills and selected work.">
+  <meta property="og:description" content="Odoo developer building HR, payroll and attendance software. Explore what I build.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e3a5f'/><text x='50' y='67' font-size='48' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'>JB</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23714b67'/><text x='50' y='67' font-size='48' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'>JB</text></svg>">
   <link rel="stylesheet" href="style.css">
   <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+
   <header class="nav" id="nav">
     <div class="wrap nav-inner">
-      <a href="#top" class="logo">Jose Vincent Bibay</a>
+      <a href="#top" class="logo">JB<span>.</span></a>
       <nav id="menu" aria-label="Main">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#build">What I build</a>
+        <a href="#playground">Playground</a>
         <a href="#skills">Skills</a>
         <a href="#work">Work</a>
-        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav-actions">
+        <button id="palette-btn" class="kbd-btn" aria-label="Open command menu"><kbd>Ctrl</kbd><kbd>K</kbd></button>
         <button id="theme" class="icon-btn" aria-label="Toggle light and dark theme">◐</button>
         <button id="burger" class="icon-btn burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
       </div>
@@ -34,159 +39,173 @@
 
   <main id="main">
     <section id="top" class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Odoo Developer · Philippines</p>
-          <h1>Jose Vincent Bibay</h1>
-          <p class="lead">I build and maintain HR, payroll and attendance software on Odoo. Over the past two years I've worked on <strong>People Navee X</strong>, a Philippine HR management system where accuracy and labor-law compliance matter.</p>
-          <div class="cta">
-            <a class="btn primary" href="#contact">Get in touch</a>
-            <a class="btn" href="#experience">View experience</a>
-          </div>
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner">
+        <p class="eyebrow reveal">Odoo Developer · Philippines</p>
+        <h1 class="reveal">Jose Vincent <span class="grad">Bibay</span></h1>
+        <p class="role reveal">I build <span id="typed" class="grad"></span><span class="caret" aria-hidden="true">|</span></p>
+        <p class="lead reveal">Two-plus years of turning complicated HR, payroll and attendance rules into reliable Odoo modules on <strong>People Navee X</strong>.</p>
+        <div class="cta reveal">
+          <a class="btn primary" href="#playground">Try the playground</a>
+          <a class="btn" href="#contact">Get in touch</a>
         </div>
-        <dl class="facts-card">
-          <div><dt>Role</dt><dd>Odoo Developer</dd></div>
-          <div><dt>Experience</dt><dd>2+ years</dd></div>
-          <div><dt>Product</dt><dd>People Navee X</dd></div>
-          <div><dt>Domain</dt><dd>HR, payroll, attendance</dd></div>
-          <div><dt>Location</dt><dd>Pangasinan, Philippines</dd></div>
-        </dl>
+        <a class="scroll-hint" href="#about" aria-label="Scroll down"><span></span></a>
       </div>
     </section>
 
     <section id="about" class="section alt">
-      <div class="wrap narrow">
-        <h2>About</h2>
-        <p>I'm an Odoo developer working on the modules HR teams depend on every day: attendance and timekeeping, payroll, leave and employee management. My focus is on correct business logic, clear code and changes that are easy for a team to review and maintain.</p>
-        <p>I hold a Bachelor of Science in Information Technology from the University of Pangasinan, with coursework in data structures and algorithms, operating systems, database management and web development.</p>
+      <div class="wrap two">
+        <div class="reveal">
+          <h2>About</h2>
+          <p>I'm an Odoo developer working on the modules HR teams rely on every day: attendance and timekeeping, payroll, leave and employee management. I care about correct business logic, clear code and changes that are easy for a team to review.</p>
+          <p>I hold a BSIT from the University of Pangasinan, with coursework in data structures and algorithms, operating systems, database management and web development.</p>
+        </div>
+        <dl class="facts reveal">
+          <div><dt>Role</dt><dd>Odoo Developer</dd></div>
+          <div><dt>Experience</dt><dd>2+ years</dd></div>
+          <div><dt>Product</dt><dd>People Navee X</dd></div>
+          <div><dt>Domain</dt><dd>HR · Payroll · Attendance</dd></div>
+          <div><dt>Location</dt><dd>Pangasinan, PH</dd></div>
+        </dl>
       </div>
     </section>
 
     <section id="experience" class="section">
       <div class="wrap narrow">
-        <h2>Experience</h2>
-        <article class="job">
-          <div class="job-head">
-            <div>
-              <h3>Odoo Developer</h3>
-              <p class="org">People Navee X</p>
-            </div>
-            <span class="period">2+ years · Present</span>
+        <h2 class="reveal">Experience</h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <div class="job-head"><h3>Odoo Developer · People Navee X</h3><span class="period">2+ years · Present</span></div>
+            <ul class="points">
+              <li>Develop and maintain Odoo modules for a Philippine HR management system covering attendance, payroll, leave and employee management.</li>
+              <li>Implement business rules for Philippine labor-law requirements, including payroll computation and statutory contributions.</li>
+              <li>Build models, views, security rules and wizards in Python and XML, following Odoo conventions.</li>
+              <li>Investigate defects, fix root causes and add unit tests to prevent regressions.</li>
+              <li>Collaborate through git feature branches, pull requests and automated quality checks.</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="job-head"><h3>BS Information Technology</h3><span class="period">2021 - Present</span></div>
+            <p class="muted">University of Pangasinan, Dagupan City</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="build" class="section alt">
+      <div class="wrap">
+        <h2 class="reveal">What I build</h2>
+        <p class="sub reveal">Pick a module to see the kind of problem it solves and how it looks in Odoo.</p>
+        <div class="explorer reveal">
+          <div class="tabs" role="tablist" aria-label="HR modules">
+            <button role="tab" aria-selected="true" data-tab="attendance">Attendance</button>
+            <button role="tab" aria-selected="false" data-tab="payroll">Payroll</button>
+            <button role="tab" aria-selected="false" data-tab="leave">Leave</button>
+            <button role="tab" aria-selected="false" data-tab="employee">Employee</button>
           </div>
-          <ul class="points">
-            <li>Develop and maintain Odoo modules for a Philippine HR management system covering attendance, payroll, leave and employee management.</li>
-            <li>Implement business rules for Philippine labor-law requirements, including payroll computation and statutory contributions.</li>
-            <li>Build models, views, security rules and wizards in Python and XML, following Odoo conventions.</li>
-            <li>Investigate defects, fix root causes and add unit tests to prevent regressions.</li>
-            <li>Collaborate through git feature branches, pull requests and automated quality checks.</li>
-          </ul>
-        </article>
+          <div class="panel" role="tabpanel">
+            <div>
+              <h3 id="tab-title"></h3>
+              <p id="tab-desc"></p>
+              <ul class="chips" id="tab-chips"></ul>
+            </div>
+            <pre class="code" aria-label="Illustrative code sample"><code id="tab-code"></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="playground" class="section">
+      <div class="wrap narrow">
+        <h2 class="reveal">Playground</h2>
+        <p class="sub reveal">Payroll rules are full of small details. Here's a tiny illustration: an overtime pay estimator using the standard Philippine premium rates.</p>
+        <form class="calc reveal" id="calc" onsubmit="return false">
+          <label>Hourly rate (PHP)<input id="rate" type="number" min="0" step="0.01" value="100" inputmode="decimal"></label>
+          <label>Overtime hours<input id="hours" type="number" min="0" step="0.5" value="2" inputmode="decimal"></label>
+          <label>Day type
+            <select id="daytype">
+              <option value="1.25">Ordinary day (125%)</option>
+              <option value="1.69">Rest day or special day (130% × 130%)</option>
+              <option value="2.6">Regular holiday (200% × 130%)</option>
+            </select>
+          </label>
+          <div class="result" aria-live="polite">
+            <span class="result-label">Overtime pay</span>
+            <strong id="ot-total">PHP 250.00</strong>
+            <span id="ot-formula" class="muted"></span>
+          </div>
+        </form>
+        <p class="note reveal">Illustrative only. Real payroll also depends on company policy, night differential, exemptions and current regulations.</p>
       </div>
     </section>
 
     <section id="skills" class="section alt">
       <div class="wrap">
-        <h2>Skills</h2>
-        <div class="skill-grid">
-          <div>
-            <h3>Odoo</h3>
-            <ul class="list"><li>Module development</li><li>ORM, models and computed fields</li><li>XML views and actions</li><li>Access rights and record rules</li><li>Wizards and background jobs</li></ul>
-          </div>
-          <div>
-            <h3>Backend</h3>
-            <ul class="list"><li>Python</li><li>PostgreSQL</li><li>REST API integration</li><li>Unit testing</li></ul>
-          </div>
-          <div>
-            <h3>Front-end</h3>
-            <ul class="list"><li>JavaScript and OWL</li><li>HTML and CSS</li></ul>
-          </div>
-          <div>
-            <h3>Tooling &amp; practice</h3>
-            <ul class="list"><li>Git and pull request workflow</li><li>CI quality gates and linting</li><li>Debugging and root-cause analysis</li></ul>
-          </div>
+        <h2 class="reveal">Skills</h2>
+        <div class="filters reveal" role="group" aria-label="Filter skills">
+          <button aria-pressed="true" data-f="all">All</button>
+          <button aria-pressed="false" data-f="odoo">Odoo</button>
+          <button aria-pressed="false" data-f="backend">Backend</button>
+          <button aria-pressed="false" data-f="frontend">Front-end</button>
+          <button aria-pressed="false" data-f="practice">Practice</button>
         </div>
+        <ul class="skill-cloud" id="skill-cloud">
+          <li data-c="odoo">Module development</li><li data-c="odoo">ORM &amp; computed fields</li><li data-c="odoo">XML views &amp; actions</li>
+          <li data-c="odoo">Access rights &amp; record rules</li><li data-c="odoo">Wizards</li><li data-c="odoo">Background jobs</li>
+          <li data-c="backend">Python</li><li data-c="backend">PostgreSQL</li><li data-c="backend">REST API integration</li><li data-c="backend">Unit testing</li>
+          <li data-c="frontend">JavaScript &amp; OWL</li><li data-c="frontend">HTML</li><li data-c="frontend">CSS</li>
+          <li data-c="practice">Git &amp; pull requests</li><li data-c="practice">CI quality gates</li><li data-c="practice">Root-cause debugging</li>
+        </ul>
       </div>
     </section>
 
     <section id="work" class="section">
       <div class="wrap">
-        <h2>Selected work</h2>
-        <article class="feature">
+        <h2 class="reveal">Selected work</h2>
+        <article class="feature reveal tilt">
           <span class="tag">Professional</span>
           <h3>People Navee X</h3>
-          <p>A Philippine HR management system built on Odoo. It brings attendance and timekeeping, payroll, leave and employee management together and is designed around local labor-law compliance. I contribute to its ongoing development as part of the product team.</p>
+          <p>A Philippine HR management system built on Odoo. It brings attendance and timekeeping, payroll, leave and employee management together, designed around local labor-law compliance. I contribute to its ongoing development as part of the product team.</p>
           <p class="tech">Odoo · Python · PostgreSQL · XML · JavaScript</p>
         </article>
-        <h3 class="sub">Other projects</h3>
         <div class="grid">
-          <article class="card">
-            <span class="tag">Academic · 2023</span>
-            <h4>FLIPSIDE</h4>
-            <p>Responsive website for the school department at the University of Pangasinan.</p>
-            <p class="tech">HTML · CSS · JavaScript</p>
-          </article>
-          <article class="card">
-            <span class="tag">GitHub</span>
-            <h4>Employee Management</h4>
-            <p>Employee management application.</p>
-            <a class="link" href="https://github.com/JvBibay/Employee-management" target="_blank" rel="noopener">View repository</a>
-          </article>
-          <article class="card">
-            <span class="tag">GitHub</span>
-            <h4>Mobile Healthcare</h4>
-            <p>Healthcare-focused mobile project.</p>
-            <a class="link" href="https://github.com/JvBibay/Mobile-Healthcare" target="_blank" rel="noopener">View repository</a>
-          </article>
+          <article class="card reveal tilt"><span class="tag">Academic · 2023</span><h4>FLIPSIDE</h4><p>Responsive website for the school department at the University of Pangasinan.</p><p class="tech">HTML · CSS · JavaScript</p></article>
+          <article class="card reveal tilt"><span class="tag">GitHub</span><h4>Employee Management</h4><p>Employee management application.</p><a class="link" href="https://github.com/JvBibay/Employee-management" target="_blank" rel="noopener">View repository →</a></article>
+          <article class="card reveal tilt"><span class="tag">GitHub</span><h4>Mobile Healthcare</h4><p>Healthcare-focused mobile project.</p><a class="link" href="https://github.com/JvBibay/Mobile-Healthcare" target="_blank" rel="noopener">View repository →</a></article>
         </div>
+        <h3 class="sub-h reveal">Certifications</h3>
+        <ul class="certs reveal">
+          <li><strong>DICT-WD002</strong> Using HTML and CSS to Design a Website <span>Feb 2023</span></li>
+          <li><strong>DICT-WD001</strong> Principles of Web Development and Introduction to HTML <span>Dec 2022</span></li>
+        </ul>
       </div>
     </section>
 
-    <section id="education" class="section alt">
-      <div class="wrap narrow">
-        <h2>Education &amp; certifications</h2>
-        <article class="job">
-          <div class="job-head">
-            <div>
-              <h3>Bachelor of Science in Information Technology</h3>
-              <p class="org">University of Pangasinan, Dagupan City</p>
-            </div>
-            <span class="period">2021 - Present</span>
-          </div>
-        </article>
-        <article class="job">
-          <div class="job-head">
-            <div>
-              <h3>DICT-WD002: Using HTML and CSS to Design a Website</h3>
-              <p class="org">Department of Information and Communications Technology (MACH)</p>
-            </div>
-            <span class="period">Feb 2023</span>
-          </div>
-        </article>
-        <article class="job">
-          <div class="job-head">
-            <div>
-              <h3>DICT-WD001: Principles of Web Development and Introduction to HTML</h3>
-              <p class="org">Department of Information and Communications Technology (MACH)</p>
-            </div>
-            <span class="period">Dec 2022</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="wrap narrow center">
-        <h2>Contact</h2>
-        <p>For Odoo development or HR and payroll software, the best way to reach me is by email.</p>
-        <p><a class="btn primary" href="mailto:vincentrbibay@gmail.com">vincentrbibay@gmail.com</a></p>
+    <section id="contact" class="section alt">
+      <div class="wrap narrow center reveal">
+        <h2>Let's talk</h2>
+        <p class="sub">For Odoo development or HR and payroll software, email is the best way to reach me.</p>
+        <div class="cta center-flex">
+          <a class="btn primary" href="mailto:vincentrbibay@gmail.com">Send an email</a>
+          <button class="btn" id="copy" type="button">Copy email address</button>
+        </div>
         <p class="socials"><a href="https://github.com/JvBibay" target="_blank" rel="noopener">GitHub</a></p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap">&copy; <span id="year"></span> Jose Vincent Bibay</div>
-  </footer>
+  <footer class="footer"><div class="wrap">&copy; <span id="year"></span> Jose Vincent Bibay</div></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="palette" id="palette" hidden>
+    <div class="palette-box" role="dialog" aria-modal="true" aria-label="Command menu">
+      <input id="palette-input" type="text" placeholder="Jump to a section or run an action…" autocomplete="off" aria-label="Search commands">
+      <ul id="palette-list" role="listbox"></ul>
+      <p class="palette-hint"><kbd>↑</kbd><kbd>↓</kbd> navigate · <kbd>Enter</kbd> select · <kbd>Esc</kbd> close</p>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
