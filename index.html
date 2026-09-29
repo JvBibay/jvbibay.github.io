@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jose Vincent Bibay | Web Developer</title>
+  <meta name="description" content="Portfolio of Jose Vincent Bibay, a BSIT student and web developer from Pangasinan, Philippines.">
+  <meta property="og:title" content="Jose Vincent Bibay | Web Developer">
+  <meta property="og:description" content="BSIT student and web developer. Projects, skills and certifications.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230ea5e9'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'>JV</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#home" class="logo">JV<span>.</span></a>
+      <nav id="menu" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme" class="icon-btn" aria-label="Toggle theme">◐</button>
+        <button id="burger" class="icon-btn burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Jose Vincent <span class="grad">Bibay</span></h1>
+          <p class="role">I build <span id="typed" class="grad"></span><span class="caret">|</span></p>
+          <p class="lead">A BSIT student from Pangasinan who enjoys turning ideas into clean, responsive websites, and is looking for real-world experience to grow as a developer.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View my work</a>
+            <a class="btn" href="Jose-Vincent-Bibay-cv.pdf" download>Download CV</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/JvBibay" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:vincentrbibay@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="code-card">
+            <div class="dots"><i></i><i></i><i></i></div>
+<pre><code><span class="k">const</span> developer = {
+  name: <span class="s">"Jose Vincent Bibay"</span>,
+  role: <span class="s">"Web Developer"</span>,
+  studying: <span class="s">"BSIT @ Univ. of Pangasinan"</span>,
+  stack: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>],
+  learning: <span class="s">"Java, C++, Databases"</span>,
+  openToWork: <span class="k">true</span>,
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="wrap narrow reveal">
+        <h2>About me</h2>
+        <p>I'm an IT student with a passion for technology. With a strong foundation in computer science and programming, I'm confident in my ability to contribute to projects and collaborate effectively with teams.</p>
+        <p>My coursework covers <strong>Data Structures and Algorithms</strong>, <strong>Operating Systems</strong>, <strong>Database Management Systems</strong> and <strong>Web Development</strong>. I'm looking for an opportunity to apply what I've learned in a real-world setting.</p>
+        <ul class="facts">
+          <li><span>Based in</span> Lingayen, Pangasinan, PH</li>
+          <li><span>Studying</span> BSIT, 2021 - Present</li>
+          <li><span>Focus</span> Front-end web development</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2 class="center reveal">Skills</h2>
+        <div class="two-col">
+          <div class="card reveal">
+            <h3>Programming languages</h3>
+            <ul class="bars" data-skills>
+              <li data-level="4"><span>HTML</span><b></b></li>
+              <li data-level="3"><span>CSS</span><b></b></li>
+              <li data-level="3"><span>JavaScript</span><b></b></li>
+              <li data-level="3"><span>Java</span><b></b></li>
+              <li data-level="3"><span>C++</span><b></b></li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>Team skills</h3>
+            <ul class="bars" data-skills>
+              <li data-level="3"><span>Problem-solving</span><b></b></li>
+              <li data-level="3"><span>Analytical skills</span><b></b></li>
+              <li data-level="4"><span>Collaboration</span><b></b></li>
+              <li data-level="5"><span>Communication</span><b></b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <h2 class="center reveal">Projects</h2>
+        <div class="grid">
+          <article class="card project reveal">
+            <span class="tag">2023 · School project</span>
+            <h3>FLIPSIDE</h3>
+            <p>A responsive website for the school department at the University of Pangasinan (Upang), built with HTML, CSS and JavaScript.</p>
+            <div class="chips"><em>HTML</em><em>CSS</em><em>JavaScript</em></div>
+          </article>
+          <article class="card project reveal">
+            <span class="tag">GitHub</span>
+            <h3>Employee Management</h3>
+            <p>Employee management project.</p>
+            <a class="link" href="https://github.com/JvBibay/Employee-management" target="_blank" rel="noopener">View repository →</a>
+          </article>
+          <article class="card project reveal">
+            <span class="tag">GitHub</span>
+            <h3>Mobile Healthcare</h3>
+            <p>Healthcare-focused mobile project.</p>
+            <a class="link" href="https://github.com/JvBibay/Mobile-Healthcare" target="_blank" rel="noopener">View repository →</a>
+          </article>
+          <article class="card project reveal">
+            <span class="tag">GitHub</span>
+            <h3>Feifei</h3>
+            <p>A front-end project styled with CSS.</p>
+            <a class="link" href="https://github.com/JvBibay/Feifei" target="_blank" rel="noopener">View repository →</a>
+          </article>
+        </div>
+        <p class="center more reveal"><a class="btn" href="https://github.com/JvBibay?tab=repositories" target="_blank" rel="noopener">See all repositories</a></p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="wrap narrow">
+        <h2 class="reveal">Education &amp; certifications</h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <time>2021 - Present</time>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p>University of Pangasinan, Dagupan City</p>
+          </li>
+          <li class="reveal">
+            <time>Feb 11, 2023</time>
+            <h3>DICT-WD002: Using HTML and CSS to Design a Website</h3>
+            <p>Department of Information and Communications Technology, via the Modern Academics Convergence Hub (MACH)</p>
+          </li>
+          <li class="reveal">
+            <time>Dec 1, 2022</time>
+            <h3>DICT-WD001: Principles of Web Development and Introduction to HTML</h3>
+            <p>Department of Information and Communications Technology, via the Modern Academics Convergence Hub (MACH)</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="wrap narrow center reveal">
+        <h2>Let's work together</h2>
+        <p>I'm open to internships and entry-level opportunities. Send me a message and I'll reply as soon as I can.</p>
+        <p><a class="btn primary" href="mailto:vincentrbibay@gmail.com">vincentrbibay@gmail.com</a></p>
+        <p class="socials center-flex"><a href="https://github.com/JvBibay" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">&copy; <span id="year"></span> Jose Vincent Bibay. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
