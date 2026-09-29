@@ -75,8 +75,8 @@ h3{margin:0}
 .panel.swap{animation:fade .35s}@keyframes fade{from{opacity:0;transform:translateY(6px)}}
 
 .calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:18px;padding:26px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
-.calc label{display:grid;gap:6px;min-width:0;font-size:.85rem;font-weight:600;color:var(--muted)}
-.calc input,.calc select{width:100%;min-width:0;text-overflow:ellipsis;font:inherit;font-size:1rem;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.calc label{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;min-width:0;font-size:.85rem;font-weight:600;color:var(--muted)}
+.calc input,.calc select{width:100%;max-width:100%;min-width:0;box-sizing:border-box;text-overflow:ellipsis;font:inherit;font-size:1rem;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
 .result{grid-column:1/-1;display:grid;gap:2px;padding:18px;border-radius:12px;background:var(--bg-alt);border-left:4px solid var(--accent2)}
 .result-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
 .result strong{font-size:2rem;letter-spacing:-.02em}.result .muted{font-size:.85rem;font-family:ui-monospace,Menlo,monospace}
