@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jose Vincent Bibay | Web Developer</title>
-  <meta name="description" content="Portfolio of Jose Vincent Bibay, a BSIT student and web developer from Pangasinan, Philippines.">
-  <meta property="og:title" content="Jose Vincent Bibay | Web Developer">
-  <meta property="og:description" content="BSIT student and web developer. Projects, skills and certifications.">
+  <title>Jose Vincent Bibay | Odoo Developer</title>
+  <meta name="description" content="Portfolio of Jose Vincent Bibay, an Odoo developer with 2+ years of experience building HR and payroll software, based in Pangasinan, Philippines.">
+  <meta property="og:title" content="Jose Vincent Bibay | Odoo Developer">
+  <meta property="og:description" content="Odoo developer building HR, payroll and attendance software. Experience, skills and projects.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230ea5e9'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'>JV</text></svg>">
   <link rel="stylesheet" href="style.css">
@@ -20,6 +20,7 @@
       <a href="#home" class="logo">JV<span>.</span></a>
       <nav id="menu" aria-label="Main">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
@@ -39,7 +40,7 @@
           <p class="eyebrow">Hi, I'm</p>
           <h1>Jose Vincent <span class="grad">Bibay</span></h1>
           <p class="role">I build <span id="typed" class="grad"></span><span class="caret">|</span></p>
-          <p class="lead">A BSIT student from Pangasinan who enjoys turning ideas into clean, responsive websites, and is looking for real-world experience to grow as a developer.</p>
+          <p class="lead">An Odoo developer with 2+ years of experience building HR, payroll and attendance software on <strong>People Navee X</strong>, with a web development foundation in HTML, CSS and JavaScript.</p>
           <div class="cta">
             <a class="btn primary" href="#projects">View my work</a>
             <a class="btn" href="Jose-Vincent-Bibay-cv.pdf" download>Download CV</a>
@@ -54,11 +55,11 @@
             <div class="dots"><i></i><i></i><i></i></div>
 <pre><code><span class="k">const</span> developer = {
   name: <span class="s">"Jose Vincent Bibay"</span>,
-  role: <span class="s">"Web Developer"</span>,
-  studying: <span class="s">"BSIT @ Univ. of Pangasinan"</span>,
-  stack: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>],
-  learning: <span class="s">"Java, C++, Databases"</span>,
-  openToWork: <span class="k">true</span>,
+  role: <span class="s">"Odoo Developer"</span>,
+  product: <span class="s">"People Navee X"</span>,
+  experience: <span class="s">"2+ years"</span>,
+  stack: [<span class="s">"Odoo"</span>, <span class="s">"Python"</span>, <span class="s">"PostgreSQL"</span>],
+  web: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>],
 };</code></pre>
           </div>
         </div>
@@ -68,20 +69,46 @@
     <section id="about" class="section alt">
       <div class="wrap narrow reveal">
         <h2>About me</h2>
-        <p>I'm an IT student with a passion for technology. With a strong foundation in computer science and programming, I'm confident in my ability to contribute to projects and collaborate effectively with teams.</p>
-        <p>My coursework covers <strong>Data Structures and Algorithms</strong>, <strong>Operating Systems</strong>, <strong>Database Management Systems</strong> and <strong>Web Development</strong>. I'm looking for an opportunity to apply what I've learned in a real-world setting.</p>
+        <p>I'm an Odoo developer with more than two years of experience working on <strong>People Navee X</strong>, a Philippine HR management system built on Odoo. My work sits in the modules that HR teams rely on every day: attendance and timekeeping, payroll, leave and employee management.</p>
+        <p>I hold a BSIT from the University of Pangasinan, where I studied <strong>Data Structures and Algorithms</strong>, <strong>Operating Systems</strong>, <strong>Database Management Systems</strong> and <strong>Web Development</strong>. That foundation helps me write code that is correct, maintainable and easy for teammates to pick up.</p>
         <ul class="facts">
           <li><span>Based in</span> Lingayen, Pangasinan, PH</li>
-          <li><span>Studying</span> BSIT, 2021 - Present</li>
-          <li><span>Focus</span> Front-end web development</li>
+          <li><span>Working on</span> People Navee X (Odoo)</li>
+          <li><span>Experience</span> 2+ years in Odoo development</li>
+          <li><span>Education</span> BSIT, University of Pangasinan</li>
         </ul>
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="experience" class="section">
+      <div class="wrap narrow">
+        <h2 class="reveal">Experience</h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <time>2+ years · Present</time>
+            <h3>Odoo Developer, People Navee X</h3>
+            <p>Developing and maintaining modules for a Philippine HR management system on Odoo, covering attendance and timekeeping, payroll, leave and employee management.</p>
+            <ul class="points">
+              <li>Build and extend Odoo models, views, security rules and wizards in Python and XML</li>
+              <li>Implement business rules for Philippine labor-law requirements such as payroll computation and statutory contributions</li>
+              <li>Investigate and fix defects, and write unit tests to prevent regressions</li>
+              <li>Work through git feature branches, pull requests and CI quality gates with the team</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
       <div class="wrap">
         <h2 class="center reveal">Skills</h2>
         <div class="two-col">
+          <div class="card reveal">
+            <h3>Odoo &amp; backend</h3>
+            <div class="chips big">
+              <em>Odoo</em><em>Python</em><em>PostgreSQL</em><em>ORM &amp; models</em><em>XML views</em><em>Access rules</em><em>OWL / JavaScript</em><em>Unit testing</em><em>Git &amp; CI</em>
+            </div>
+          </div>
           <div class="card reveal">
             <h3>Programming languages</h3>
             <ul class="bars" data-skills>
@@ -105,10 +132,16 @@
       </div>
     </section>
 
-    <section id="projects" class="section alt">
+    <section id="projects" class="section">
       <div class="wrap">
         <h2 class="center reveal">Projects</h2>
         <div class="grid">
+          <article class="card project reveal">
+            <span class="tag">Professional · Odoo</span>
+            <h3>People Navee X</h3>
+            <p>Philippine HR management system on Odoo: attendance, payroll, leave and employee management, built for local labor-law compliance. I contribute to its development as part of the product team.</p>
+            <div class="chips"><em>Odoo</em><em>Python</em><em>PostgreSQL</em></div>
+          </article>
           <article class="card project reveal">
             <span class="tag">2023 · School project</span>
             <h3>FLIPSIDE</h3>
@@ -138,7 +171,7 @@
       </div>
     </section>
 
-    <section id="education" class="section">
+    <section id="education" class="section alt">
       <div class="wrap narrow">
         <h2 class="reveal">Education &amp; certifications</h2>
         <ol class="timeline">
@@ -161,10 +194,10 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <section id="contact" class="section">
       <div class="wrap narrow center reveal">
         <h2>Let's work together</h2>
-        <p>I'm open to internships and entry-level opportunities. Send me a message and I'll reply as soon as I can.</p>
+        <p>Have an Odoo project, or want to talk about HR and payroll software? Send me a message and I'll reply as soon as I can.</p>
         <p><a class="btn primary" href="mailto:vincentrbibay@gmail.com">vincentrbibay@gmail.com</a></p>
         <p class="socials center-flex"><a href="https://github.com/JvBibay" target="_blank" rel="noopener">GitHub</a></p>
       </div>

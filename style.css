@@ -92,3 +92,6 @@ h2.center{margin-bottom:40px}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}.bars b::after{width:calc(var(--lvl) * 20%)}
 }
+
+.points{margin:12px 0 0;padding-left:18px;color:var(--muted);font-size:.93rem}.points li{margin-bottom:6px}
+.chips.big em{font-size:.82rem;padding:6px 13px}

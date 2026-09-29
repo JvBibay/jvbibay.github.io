@@ -56,7 +56,7 @@
   document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
 
   // Typing effect
-  var words = ["responsive websites", "clean front-end code", "things that work on the web"];
+  var words = ["Odoo modules", "HR and payroll software", "clean, tested Python code"];
   var el = document.getElementById("typed");
   if (reduce) { el.textContent = words[0]; return; }
   var w = 0, c = 0, del = false;
