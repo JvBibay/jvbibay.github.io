@@ -80,8 +80,7 @@
     var canvas = $("net"), ctx = canvas.getContext("2d");
     var dots = [], mouse = { x: -999, y: -999 }, raf, visible = true, W, H;
     function color(a) {
-      var dark = getComputedStyle(root).getPropertyValue("--bg").trim().toLowerCase() !== "#ffffff";
-      return (dark ? "rgba(185,140,173," : "rgba(113,75,103,") + a + ")";
+      return "rgba(" + getComputedStyle(root).getPropertyValue("--net").trim() + "," + a + ")";
     }
     function resize() {
       var r = canvas.getBoundingClientRect(), d = Math.min(devicePixelRatio || 1, 2);
